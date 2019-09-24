@@ -1,0 +1,2 @@
+class=cn.itcast.reflect.Teacher
+method=teach
