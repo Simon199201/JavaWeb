@@ -1,8 +1,7 @@
-package cn.itcast.homework.test11;
+package cn.itcast.homework.reflect.test11;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * 通过反射技术，在这个泛型为Integer的ArrayList中存放一个String类型的对象

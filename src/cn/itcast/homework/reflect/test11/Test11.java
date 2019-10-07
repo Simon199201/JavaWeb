@@ -1,10 +1,10 @@
-package cn.itcast.homework.test11;
+package cn.itcast.homework.reflect.test11;
 
 import java.lang.reflect.Method;
 
 public class Test11 {
     public static void main(String[] args) throws Exception {
-        Class<?> cls = Class.forName("cn.itcast.homework.test11.Person");
+        Class<?> cls = Class.forName("cn.itcast.homework.reflect.test11.Person");
         //获取对象
         Object obj = cls.newInstance();
         //设置姓名

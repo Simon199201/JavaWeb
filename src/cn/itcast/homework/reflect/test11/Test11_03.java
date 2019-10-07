@@ -1,4 +1,4 @@
-package cn.itcast.homework.test11;
+package cn.itcast.homework.reflect.test11;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -17,7 +17,7 @@ public class Test11_03 {
         map.put("address", "北京");
 
 
-        Class<?> aClass = Class.forName("cn.itcast.homework.test11.Person");
+        Class<?> aClass = Class.forName("cn.itcast.homework.reflect.test11.Person");
         Object obj = aClass.newInstance();
         Set<String> keys = map.keySet();
         for (String key : keys) {

@@ -1,4 +1,4 @@
-package cn.itcast.homework.test11;
+package cn.itcast.homework.reflect.test11;
 
 public class Person {
     private String name;
