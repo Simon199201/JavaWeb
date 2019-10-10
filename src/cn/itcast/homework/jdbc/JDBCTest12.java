@@ -1,4 +1,4 @@
-package cn.itcast.jdbc;
+package cn.itcast.homework.jdbc;
 
 import java.sql.*;
 

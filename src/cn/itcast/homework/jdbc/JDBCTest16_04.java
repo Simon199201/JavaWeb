@@ -1,8 +1,14 @@
-package cn.itcast.jdbc;
+package cn.itcast.homework.jdbc;
 
+import cn.itcast.jdbc.bean.Student;
 import cn.itcast.jdbc.util.JDBCUtils;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 使用PreparedStatement对象完成数据库的增删改查
@@ -15,9 +21,13 @@ import java.sql.*;
  * <p>
  * 4.查询所有的学生信息
  */
-public class JDBCTest16 {
+public class JDBCTest16_04 {
     public static void main(String[] args) {
+        System.out.println(new JDBCTest16_04().getAllStudent());
+    }
+    public List<Student> getAllStudent(){
         Connection conn = null;
+        List<Student> list = new ArrayList<>();
         try {
             conn = JDBCUtils.getConnection();
             //添加一张学生表
@@ -46,15 +56,21 @@ public class JDBCTest16 {
 //            System.out.println(execute);
 
             ResultSet resultSet = preparedStatement.executeQuery();
+            Student student = null;
             while (resultSet.next()) {
+                student = new Student();
                 int id = resultSet.getInt(1);
                 String name = resultSet.getString(2);
                 System.out.println("id is " + id + "\tname is " + name);
+                student.setId(id);
+                student.setName(name);
+                list.add(student);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             JDBCUtils.close(null, conn);
         }
+        return list;
     }
 }

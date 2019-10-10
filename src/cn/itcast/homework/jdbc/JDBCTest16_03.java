@@ -1,11 +1,9 @@
-package cn.itcast.jdbc;
+package cn.itcast.homework.jdbc;
 
-import cn.itcast.jdbc.bean.Student;
 import cn.itcast.jdbc.util.JDBCUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
