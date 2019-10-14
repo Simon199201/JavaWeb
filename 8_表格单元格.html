@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格单元格</title>
+</head>
+<body>
+<table border="1" cellpadding="0" cellspacing="0" bgcolor="red" align="center" width="50%">
+    <tr>
+        <td>编号</td>
+        <td>姓名</td>
+        <td>成绩</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小龙女</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>杨过</td>
+        <td>100</td>
+    </tr>
+</table>
+
+
+<tr/>
+
+<table border="1" cellpadding="0" cellspacing="0" bgcolor="red" align="center" width="50%">
+    <caption>学生成绩单</caption>
+    <tr>
+        <td>编号</td>
+        <td>姓名</td>
+        <td>成绩</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小龙女</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>杨过</td>
+        <td>100</td>
+    </tr>
+</table>
+<!--合并单元格-->
+<table border="1" cellpadding="0" cellspacing="0" bgcolor="red" align="center" width="50%">
+    <caption>学生成绩单</caption>
+    <tr>
+        <td rowspan="2">编号</td>
+        <td>姓名</td>
+        <td>成绩</td>
+    </tr>
+    <tr>
+        <td>小龙女</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td colspan="2">杨过</td>
+    </tr>
+</table>
+</body>
+</html>
