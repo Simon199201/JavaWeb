@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bom对象</title>
+
+</head>
+<body>
+<input type="button" id="button_open" value="打开网页">
+<input type="button" id="button_close" value="关闭网页">
+<script>
+    var newWindow;
+    var btn_open = document.getElementById("button_open");
+    var btn_close = document.getElementById("button_close");
+    btn_open.onclick = function () {
+        newWindow = open("https://www.baidu.com")
+    };
+    btn_close.onclick=function () {
+        newWindow.close();
+    }
+</script>
+</body>
+</html>
