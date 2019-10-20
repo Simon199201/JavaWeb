@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<style>
+			a{
+				text-decoration: none;
+			}
+		</style>
+		<script>
+			
+			
+		</script>
+	</head>
+	<body>
+		<a href="http://www.baidu.com" onmouseout="mouseoutfun()" onmouseover="mouseoverfun() " id="a_link">百度</a>
+		
+		<div id="ceshi" style="display:none"><a href="#">百度一下你就知道</a></div>
+	<script>
+		function mouseoverfun(){
+            document.getElementById("ceshi").style.display = "";
+		}
+		function mouseoutfun(){
+            document.getElementById("ceshi").style.display = "none";
+		}
+	</script>
+	</body>
+</html>
