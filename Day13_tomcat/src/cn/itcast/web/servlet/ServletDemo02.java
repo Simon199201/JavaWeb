@@ -3,11 +3,10 @@ package cn.itcast.web.servlet;
 import javax.servlet.*;
 import java.io.IOException;
 
-public class ServletDemo01 implements Servlet {
+public class ServletDemo02 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        System.out.println("ServletDemo01 init...");
-
+        System.out.println("ServletDemo02 init...");
     }
 
     @Override

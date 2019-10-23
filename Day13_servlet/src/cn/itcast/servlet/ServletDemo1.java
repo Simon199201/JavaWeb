@@ -1,12 +1,12 @@
-package cn.itcast.web.servlet;
+package cn.itcast.servlet;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
-
-public class ServletDemo01 implements Servlet {
+@WebServlet("/demo01")
+public class ServletDemo1 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        System.out.println("ServletDemo01 init...");
 
     }
 
@@ -14,10 +14,10 @@ public class ServletDemo01 implements Servlet {
     public ServletConfig getServletConfig() {
         return null;
     }
-    //提供服务的方法
+
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("你好，Servlet");
+        System.out.println("servlet3.1来啦！！！");
     }
 
     @Override
