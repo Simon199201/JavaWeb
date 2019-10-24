@@ -3,7 +3,7 @@ package cn.itcast.servlet;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
-@WebServlet("/demo01")
+@WebServlet("/demo02")
 public class ServletDemo1 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
