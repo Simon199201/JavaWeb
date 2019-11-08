@@ -27,8 +27,6 @@
 
 
 <%--%>--%>
-<form action="#" method="post">
-
-</form>
+    <input type="text" name="username" value="请移步到login.html"><br/>
 </body>
 </html>

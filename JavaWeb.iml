@@ -46,5 +46,15 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/Day16_jsp_homework/web/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/Day16_jsp_homework/web/lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

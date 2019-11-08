@@ -20,6 +20,28 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
+          <root url="jar://$MODULE_DIR$/../day14_test/web/WEB-INF/lib/commons-beanutils-1.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/web/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/web/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib (2)" level="project" />
+    <orderEntry type="library" name="spring-jdbc-5.0.0.RELEASE" level="project" />
+    <orderEntry type="module-library">
+      <library name="lib">
+        <CLASSES>
           <root url="file://$MODULE_DIR$/web/lib" />
         </CLASSES>
         <JAVADOC />
