@@ -8,6 +8,15 @@ public class User {
     private int age;
     private Date birthday;
 
+    public User() {
+    }
+
+    public User(String name, int age, Date birthday) {
+        this.name = name;
+        this.age = age;
+        this.birthday = birthday;
+    }
+
     public String getName() {
         return name;
     }
@@ -33,7 +42,7 @@ public class User {
     }
 
     public String getBirDay() {
-        System.out.println("getBirDay"+getBirthday());
+        System.out.println("getBirDay" + getBirthday());
         if (getBirthday() == null) {
             return null;
         }
