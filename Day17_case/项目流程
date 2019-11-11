@@ -1,0 +1,27 @@
+一、需求
+用户的增删改查
+二、设计
+1、技术选型：Servlet+JSP+MYSQL+TOMCAT+BeanUtils+Druid+JDBCTemplate
+2、数据库设计：
+    create database day17 charset = utf8;
+    use day17;
+    create table user(
+        id int primary key auto_increment,
+        name varchar(20),
+        gender varchar(5),
+        age int,
+        address varchar(32),
+        qq varchar(20),
+        email varchar(50)
+    );
+    insert into user values(null,'张三','男',18,'北京','1102003939','zhangsan@qq.com');
+    insert into user values(null,'李四','女',28,'河北','1102003539','lisi@qq.com');
+    insert into user values(null,'王五','男',38,'山东','1102003239','wangwu@qq.com');
+三、开发
+1、环境搭建
+2、编码
+    1. 创建数据库环境
+    2. 创建项目，导入需要的jar包
+四、测试
+
+五、部署
