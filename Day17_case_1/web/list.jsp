@@ -28,6 +28,14 @@
             text-align: center;
         }
     </style>
+    <script>
+        function delConfirm(id) {
+            if (confirm("确定要删除吗")) {
+                window.location.href = "${pageContext.request.contextPath}/delUserServlet?id="+id;
+            }
+        }
+
+    </script>
 </head>
 <body>
 <%
@@ -56,8 +64,8 @@
                 <td>${item.address}</td>
                 <td>${item.qq}</td>
                 <td>${item.email}</td>
-                <td><a class="btn btn-default btn-sm" href="update.html">修改</a>&nbsp;<a class="btn btn-default btn-sm"
-                                                                                        href="">删除</a></td>
+                <td><a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/updateServlet?id=${item.id}">修改</a>&nbsp;<a class="btn btn-default btn-sm"
+                                                                                        href="javascript:delConfirm(${item.id})">删除</a></td>
             </tr>
         </c:forEach>
 

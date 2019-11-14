@@ -9,4 +9,9 @@ public interface UserDao {
     User findUser(User user);
     List<User> findAllUser();
 
+    void addUser(User user);
+
+    void delUserById(String id);
+
+    User findUserById(String id);
 }

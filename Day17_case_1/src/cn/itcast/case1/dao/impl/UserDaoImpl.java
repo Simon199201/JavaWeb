@@ -33,4 +33,28 @@ public class UserDaoImpl implements UserDao {
         List<User> users = jdbcTemplate.query(sql, new BeanPropertyRowMapper<User>(User.class));
         return users;
     }
+
+    @Override
+    public void addUser(User user) {
+        String sql = "insert into user values(null,?,?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sql, user.getName(), user.getGender(), user.getAge(), user.getAddress(), user.getQq(),
+                user.getEmail(), null, null);
+    }
+
+    /**
+     * 删除用户
+     * 通过id
+     * @param id
+     */
+    @Override
+    public void delUserById(String id) {
+        String sql = "delete from user where id = ?";
+        jdbcTemplate.update(sql, id);
+    }
+
+    @Override
+    public User findUserById(String id) {
+        String sql = "select * from user where id = ?";
+        return jdbcTemplate.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),id);
+    }
 }
