@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-JQuery快速入门</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div1">
+    div1...
+</div>
+<div id="div2">
+    div2...
+</div>
+<input id="b1" type="button" value="点我" >
+</body>
+<script>
+//1.绑定事件
+//1.1获取id
+//1.2设置点击事件
+    $("#b1").click(function(){
+        alert('111')
+    });
+//js onload函数，加载完后执行
+    $(function () {
+        
+    });
+</script>
+</html>

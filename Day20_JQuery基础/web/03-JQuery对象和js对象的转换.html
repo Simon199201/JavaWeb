@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-JQuery快速入门</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div1">
+    div1...
+</div>
+<div id="div2">
+    div2...
+</div>
+</body>
+<script>
+    //  1.通过js方式来获取名称叫div的所有html元素对象
+    var divs = document.getElementsByTagName("div");
+    alert(divs);
+    //    2.通过jq方式获取名称叫div的所有html元素对象
+    var $divs = $("div");
+    alert($divs);
+
+    //js -> jq
+    // var $div1 = $("div");
+    var jq_div_1 = $(divs);
+    //jq->js
+    var js_div1 = $divs.get(0);
+    var js_div2 = $divs[0];
+
+</script>
+</html>
