@@ -51,6 +51,7 @@ public class LoginServlet extends HttpServlet {
         UserService userService = new UserServiceImpl();
         User loginUser = userService.findUser(user);
         if (loginUser != null) {
+            request.getSession().setAttribute("user", loginUser);
             response.sendRedirect(request.getContextPath() + "/userListServlet");
         } else {
             request.setAttribute("login_msg", "用户名或密码错误");
