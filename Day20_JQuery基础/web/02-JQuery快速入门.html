@@ -6,10 +6,10 @@
     <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<div id="div1">
+<div id="div1" class="div11" title="a">
     div1...
 </div>
-<div id="div2">
+<div id="div2" class="div22" title="b">
     div2...
 </div>
 </body>
@@ -29,5 +29,39 @@
 
     // alert(div3.html());
     // alert(div4.html())
+    //基本选择器
+    var $1 = $("div");
+    var $2 = $("#div1");
+    var $div11 = $(".div11");
+    //层级选择器
+    $("body div");
+    $("body > div");
+    //属性选择器
+    var $div = $("div[title]");
+    var $div = $("div[title!='a']");
+    var $div = $("div[title^='a']");
+    var $div = $("div[title$='a']");
+    var $div = $("div[title*='a']");
+    var $div = $("div[title*='a'][id]");
+    //过滤选择器 前后 奇偶 大于 等于 小于 非 标题
+    $("div:first");
+    $("div:last");
+    $("div:even");
+    $("div:odd");
+
+    $("div:eq(0)");
+    $("div:lt(0)");
+    $("div:gt(0)");
+    $("div:not(.div11)");
+
+    $(":header");
+
+    //表单过滤选择器
+    $("input:enabled");
+    $("input:disabled");
+    $("input[type='checkbox']:checked");
+    $("#job > option :selected");
+
+
 </script>
 </html>
