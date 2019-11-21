@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础案例</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#confirm").click(function () {
+                var content = $("#fav").val();
+                $("#sId option[value='"+content+"']").prop("selected", "selected");
+            });
+        });
+    </script>
+</head>
+<body>
+<!--在页面中有一个普通输入项，和下拉列表，在普通输入项输入值之后，点击比较，如果下拉列表中有和输入相同的值，下拉列表所在项选中-->
+请输入爱好：<input id="fav" type="text">
+<br/>
+爱好下拉列表：
+<select id="sId">
+    <option value="足球">足球</option>
+    <option value="篮球">篮球</option>
+    <option value="羽毛球">羽毛球</option>
+</select>
+<br/>
+<input type="button" id="confirm" value="判断"/>
+</body>
+</html>
