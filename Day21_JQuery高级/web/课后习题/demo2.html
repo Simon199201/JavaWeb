@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--在表单输入项里面输入值，根据输入值，让对应的复选框选中-->
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#commit").click(function () {
+                var val = $("#id").val();
+                $("div input[value='" + val + "']").prop("checked", "checked");
+                $("div input[value!='" + val + "']").prop("checked", false);
+            });
+        });
+    </script>
+</head>
+<body>
+请输入城市：
+<input type="text" id="id"/>
+<br/><br/>
+城市复选框：
+<div style="width:200px;background:red;">
+    <input type="checkbox" name="love" value="北京"/>北京
+    <input type="checkbox" name="love" value="南京"/>南京
+    <input type="checkbox" name="love" value="上海"/>上海
+</div>
+<input type="button" id="commit" value="判断">
+</body>
+</html>

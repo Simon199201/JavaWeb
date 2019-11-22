@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--把鼠标移动到按钮上显示div内容，把鼠标从按钮上移开，隐藏div内容-->
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#showhide").mouseover(function () {
+                $("#divid").text("itcast测试");
+            });
+            $("#showhide").mouseout(function () {
+                $("#divid").text("");
+
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" id="showhide" value="显示隐藏div"/>
+<div id="divid" style="width:100px;height:100px;border:1px solid;">itcast测试</div>
+
+</body>
+</html>
