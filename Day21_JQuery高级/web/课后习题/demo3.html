@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery高级案例</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        var count = 5;
+        $(function () {
+            $("#btn_commit").prop("disabled", true);
+            $("#btn_commit").prop("value", "请仔细阅读协议("+count+")");
+            var startID = setInterval(function () {
+                count--;
+                console.log("count is " + count);
+                $("#btn_commit").prop("value", "请仔细阅读协议("+count+")");
+                if (count === 0) {
+                    $("#btn_commit").prop("disabled", false);
+                    clearInterval(startID);
+                    $("#btn_commit").prop("value", "请仔细阅读协议");
+
+                }
+            },1000);
+
+        });
+    </script>
+</head>
+<body>
+<input type="button" id="btn_commit">
+</body>
+</html>
